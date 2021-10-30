@@ -1,0 +1,148 @@
+/* Full page view */
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: lightblue;
+  }
+
+  .dore{
+    position: relative;
+    height: 50vmin;
+    width: 50vmin;
+    background: rgb(2, 159, 227);
+    border: none;
+    border-radius: 15%;
+    border-bottom: 2vmin solid rgba(1, 123, 175, 0.671);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .eye::before{
+    content: '';
+    position: absolute;
+    background: whitesmoke;
+    height: 17vmin;
+    width: 75px;
+    border-radius: 50%;
+    border-color: black;
+    border-width: 1px;
+    bottom: 30vmin;
+    left: 50px;
+    
+    box-shadow: 23vmin 0 whitesmoke;
+  }
+
+  .details {
+    position: relative;
+    background: whitesmoke;
+    height: 5vmin;
+    width: 10px;
+    border-radius: 50% 50% 60% 60%;
+    border:  solid 3px black;
+    border-bottom: 2vmin solid black;
+    border-left: 1.8vmin solid black;
+    border-right: 1.8vmin solid black;
+    
+    z-index: 1;
+    left: -10.8vmin;
+    bottom: 60px;
+    
+  }
+  .details::after {
+    content: '';
+    position: absolute;
+    background: whitesmoke;
+    height: 5vmin;
+    width: 10px;
+    border-radius: 50% 50% 60% 60%;
+    border:  solid 3px black;
+    border-bottom: 2vmin solid black;
+    border-left: 1.8vmin solid black;
+    border-right: 1.8vmin solid black;
+    top: -2px;
+    z-index: 1;
+    left: 21.2vmin;
+  }
+
+  .nose{
+    height: 75px;
+    width: 75px;
+    border-radius: 50% ;
+    background: red;
+    position: absolute;
+    bottom: 125px;
+    z-index: 100;
+    left: 120px;
+    border: 1px solid rgba(255, 0, 0, 0.904);
+  }
+
+  .smile{
+    position: relative;
+  }
+  
+  .smile:before{
+    content: "";
+    position: absolute;
+    border: 1px solid whitesmoke;
+    left: 2px;
+    height: 60px;
+    top: -15px;
+    z-index: 101;
+  }
+  
+  .smile:after{
+      content: "";
+      border-bottom: 4px solid whitesmoke;
+      width: 90px;
+      position: absolute;
+      top: -12px;
+      z-index: 101;
+      border-radius: 96px;
+      left: 14%;
+      height: 84px;
+  }
+
+  .smiley:after{
+    content: "";
+    border-bottom: 4px solid whitesmoke;
+    width: 90px;
+    position: absolute;
+    bottom: 55px;
+    z-index: 101;
+    border-radius: 96px;
+    left: 70px;
+    height: 84px;
+}
+
+.mouth{
+    content: "";
+    height: 65px;
+    width: 115px;
+    border-radius: 50% ;
+    background: red;
+    position: absolute;
+    bottom: 25px;
+    z-index: 10;
+    left: 100px;
+    border: 1px solid rgba(255, 0, 0, 0.904);
+}
+
+.dore:hover {
+    border: none;
+    transform: translatey(1vmin);
+    cursor: pointer;
+}
+
+
